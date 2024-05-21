@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { Editor } from './components/Editor'
 import { Previewer } from './components/Previewer'

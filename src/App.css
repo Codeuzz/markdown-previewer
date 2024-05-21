@@ -54,29 +54,37 @@ body {
   background-color: #87b5b5;
   font-family: "Fira Code";
 }
-body #editor-div {
+body #main-div {
   display: flex;
   flex-direction: column;
   max-width: 600px;
   border: 1px solid black;
   margin: 20px auto;
 }
-body #editor-div textarea {
+body #main-div textarea {
   resize: vertical;
   background-color: #b3d1d1;
   outline: none;
 }
-body #editor-div #editor-title {
+body #main-div #main-title {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
   padding: 5px 10px;
   background-color: #2a9696;
 }
-body #editor-div #editor-title h4 {
+body #main-div #main-title h4 {
   font-weight: 800;
+}
+body #main-div #main-title span:hover {
+  color: #b3d1d1;
+  cursor: pointer;
 }
 body #previewer-div {
   background-color: #b3d1d1;
   height: 200px;
+}
+body #previewer-div #maximize-btn:hover:hover {
+  color: #b3d1d1;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

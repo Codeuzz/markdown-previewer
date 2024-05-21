@@ -56,11 +56,19 @@ table {
 	background-color: #2a9696;
 }
 
+@mixin maximize {
+  &:hover {
+    color:#b3d1d1;
+    cursor: pointer;
+  }
+    
+}
+
 body {
     background-color: #87b5b5;
     font-family: "Fira Code";
 
-	#editor-div {
+	#main-div {
 		display: flex;
 		flex-direction: column;
 		max-width: 600px;
@@ -73,12 +81,16 @@ body {
 			outline: none;
 		}
 	
-		#editor-title {
+		#main-title {
 			@include title;
 	
 			h4 {
 				font-weight: 800;
 			}
+
+      span {
+        @include maximize()
+      }
 			
 		}
 }
@@ -86,6 +98,10 @@ body {
 	#previewer-div {
 		background-color: #b3d1d1;
 		height: 200px;
+
+    #maximize-btn:hover {
+      @include maximize()
+    }
 	}
 
 
