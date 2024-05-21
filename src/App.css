@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CODE CODE CODE */
+body {
+  background-color: #87b5b5;
+  font-family: "Fira Code";
+}
+body #editor-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+body #editor-div textarea {
+  resize: vertical;
+  background-color: #b3d1d1;
+  outline: none;
+}
+body #editor-div #editor-title {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px 10px;
+  background-color: #2a9696;
+}
+body #editor-div #editor-title h4 {
+  font-weight: 800;
+}
+body #previewer-div {
+  background-color: #b3d1d1;
+  height: 200px;
+}/*# sourceMappingURL=App.css.map */
