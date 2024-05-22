@@ -47,6 +47,7 @@ export function parseMarkdown(text) {
     // Convert strikethrough text
     text = text.replace(/~~(.*?)~~/gim, '<del>$1</del>');
 
+    // text = text.replace(/<(\w+)([^>]*)>(.*?)<\/\1>/gim, '<span class="custom-element">$3</span>');
 
     return text.trim();
 }
