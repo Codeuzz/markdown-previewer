@@ -10,7 +10,7 @@ export function Previewer({input}) {
             <i class="fa-solid fa-maximize"></i>
           </span>
         </div>
-        <div id="preview"  dangerouslySetInnerHTML={{ __html: parseMarkdown(input) }}>
+        <div id="preview"  dangerouslySetInnerHTML={{ __html: parseMarkdown(input) }}  className="markdown-table">
           
         </div>
       </div>
