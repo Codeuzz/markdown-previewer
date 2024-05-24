@@ -1,4 +1,5 @@
-import { parseMarkdown } from "../utils"
+import { parseMarkdown } from '/src/utils.js'
+
 
 export function Previewer({input}) {
     return (
@@ -9,7 +10,7 @@ export function Previewer({input}) {
             <i class="fa-solid fa-maximize"></i>
           </span>
         </div>
-        <div id="previewer-div"  dangerouslySetInnerHTML={{ __html: parseMarkdown(input) }}>
+        <div id="preview"  dangerouslySetInnerHTML={{ __html: parseMarkdown(input) }}>
           
         </div>
       </div>

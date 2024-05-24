@@ -15,6 +15,7 @@ body #main-div textarea {
   resize: vertical;
   background-color: #b3d1d1;
   outline: none;
+  min-height: 100px;
 }
 body #main-div #main-title {
   display: flex;
@@ -32,14 +33,22 @@ body #main-div #main-title span:hover {
   color: #b3d1d1;
   cursor: pointer;
 }
-body #previewer-div {
+body #preview {
   background-color: #b3d1d1;
   height: 200px;
   height: -moz-fit-content;
   height: fit-content;
   overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  font-size: 13px;
 }
-body #previewer-div #maximize-btn:hover:hover {
+body #preview #maximize-btn:hover:hover {
   color: #b3d1d1;
   cursor: pointer;
+}
+body #preview img {
+  max-width: 90%;
+  text-align: center;
 }/*# sourceMappingURL=App.css.map */

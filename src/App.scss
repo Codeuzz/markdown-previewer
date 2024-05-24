@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 
-
-
 /* CODE CODE CODE */
 
 @mixin title {
@@ -36,7 +34,8 @@ body {
 		textarea {
 			resize: vertical;
 			background-color: #b3d1d1;
-			outline: none;
+			outline: none; 
+			min-height: 100px; 
 		}
 	
 		#main-title {
@@ -54,17 +53,25 @@ body {
 		}
 }
 
-	#previewer-div {
+		
+		#preview {
 		background-color: #b3d1d1;
 		height: 200px;
 		height: fit-content;
 		overflow-wrap: break-word;
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px;
+		font-size: 13px;
 
     #maximize-btn:hover {
       @include maximize()
     }
+
+	img {
+		max-width: 90%;
+		text-align: center;
 	}
-
-
+	}
 	
 }

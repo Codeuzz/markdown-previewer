@@ -4,7 +4,7 @@ import { Editor } from './components/Editor'
 import { Previewer } from './components/Previewer'
 
 function App() {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState(`<h1>Hi</h1>`);
 
   const handleChange = e => {
     setInput(e.target.value);
