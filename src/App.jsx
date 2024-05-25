@@ -48,6 +48,42 @@ And here. | Okay. | I think we get it.
 \![freeCodeCamp Logo\](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
 `;
   const [input, setInput] = useState(initialMarkdown);
+  const [maximized, setMaximized] = useState(false)
+
+  const maximizePrev = e => {
+    const mainDiv = document.querySelector("#main-div")
+
+    if(!maximized) {
+      mainDiv.style.display = "none";
+      setMaximized(!maximized)
+
+    } else {
+      mainDiv.style.display = "flex";
+      setMaximized(!maximized)
+    }
+
+  };
+
+  const maximizeMain = e => {
+    const previewDiv = document.querySelector("#preview-div")
+    const textarea = document.querySelector("textarea")
+
+
+    if(!maximized) {
+      previewDiv.style.display = "none";
+      textarea.style.minHeight = "700px";
+
+      setMaximized(!maximized)
+
+    } else {
+      previewDiv.style.display = "flex";
+      textarea.style.minHeight = "150px";
+
+      
+      setMaximized(!maximized)
+    }
+
+  };
 
   const handleChange = e => {
     setInput(e.target.value);
@@ -56,8 +92,8 @@ And here. | Okay. | I think we get it.
 
   return (
     <>
-      <Editor value={input} onChange={handleChange}/>
-      <Previewer input={input} />
+      <Editor value={input} onChange={handleChange} maximize={maximizeMain}/>
+      <Previewer input={input} maximize={maximizePrev} />
     </>
   )
 }

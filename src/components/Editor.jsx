@@ -1,9 +1,9 @@
-export function Editor({value, onChange}) {
+export function Editor({value, onChange, maximize}) {
     return (
         <div id="main-div">
         <div id="main-title">
           <h4>Editor</h4>
-          <span id="maximize-btn">
+          <span id="maximize-btn" onClick={maximize}>
             <i class="fa-solid fa-maximize"></i>
           </span>
         </div>

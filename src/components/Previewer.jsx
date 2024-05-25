@@ -1,12 +1,12 @@
 import { parseMarkdown } from '/src/utils.js'
 
 
-export function Previewer({input}) {
+export function Previewer({input, maximize}) {
     return (
-        <div id="main-div">
-        <div id="main-title">
+        <div id="preview-div">
+        <div id="preview-title">
           <h4>Previewer</h4>
-          <span id="maximize-btn">
+          <span id="maximize-btn" onClick={maximize}>
             <i class="fa-solid fa-maximize"></i>
           </span>
         </div>
