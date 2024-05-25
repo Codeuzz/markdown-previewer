@@ -7,7 +7,7 @@ export function Editor({value, onChange, maximize}) {
             <i class="fa-solid fa-maximize"></i>
           </span>
         </div>
-        <textarea id="editor" value={value} onChange={onChange} placeholder="Enter your Markdown here..."></textarea>
+        <textarea id="editor" spellCheck={false} value={value} onChange={onChange} placeholder="Enter your Markdown here..."></textarea>
       </div>
     )
 }
