@@ -52,14 +52,22 @@ And here. | Okay. | I think we get it.
 
   const maximizePrev = e => {
     const mainDiv = document.querySelector("#main-div")
+    const icon = document.getElementById("icon1");
 
     if(!maximized) {
       mainDiv.style.display = "none";
-      setMaximized(!maximized)
 
+      setMaximized(!maximized)
+      
+      icon.classList.remove('fa-maximize')
+      icon.classList.add("fa-down-left-and-up-right-to-center")
     } else {
       mainDiv.style.display = "flex";
+
       setMaximized(!maximized)
+
+      icon.classList.remove('"fa-down-left-and-up-right-to-center"')
+      icon.classList.add("fa-maximize")
     }
 
   };
@@ -67,6 +75,8 @@ And here. | Okay. | I think we get it.
   const maximizeMain = e => {
     const previewDiv = document.querySelector("#preview-div")
     const textarea = document.querySelector("textarea")
+    const icon = document.getElementById("icon");
+
 
 
     if(!maximized) {
@@ -75,12 +85,16 @@ And here. | Okay. | I think we get it.
 
       setMaximized(!maximized)
 
+      icon.classList.remove('fa-maximize')
+      icon.classList.add("fa-down-left-and-up-right-to-center")
     } else {
       previewDiv.style.display = "flex";
       textarea.style.minHeight = "150px";
 
-      
       setMaximized(!maximized)
+
+      icon.classList.remove('"fa-down-left-and-up-right-to-center"')
+      icon.classList.add("fa-maximize")
     }
 
   };
